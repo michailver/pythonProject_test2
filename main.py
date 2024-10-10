@@ -204,5 +204,7 @@ elif p < 5:
     print('egzaminas neišlaikytas')
 
 
-git config --global user.email "ver.michail@gmail.com"
-git config --global user.name "michailver"
+# git config --global user.email "ver.michail@gmail.com"
+# git config --global user.name "michailver"
+
+print('Test')
