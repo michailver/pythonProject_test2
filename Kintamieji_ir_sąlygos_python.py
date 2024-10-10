@@ -77,56 +77,88 @@ from webbrowser import open_new
 ########################################################################################################################
 # Įvedami skaičiai - a, b, c –kraštinių ilgiai, trys kintamieji (naudokite random.randint(x,x) funkciją nuo 1 iki 10).
 # Parašykite Python programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.
-a = random.randint(1,10)
-b = random.randint(1,10)
-c = random.randint(1,10)
-if a + b > c and a + c > b and b + c >a:
-    print(f'{a}, {b}, {c}, Trikampis')
-else:
-    print(f'{a}, {b}, {c}, Ne Trikampis')
+# a = random.randint(1,10)
+# b = random.randint(1,10)
+# c = random.randint(1,10)
+# if a + b > c and a + c > b and b + c >a:
+#     print(f'{a}, {b}, {c}, Trikampis')
+# else:
+#     print(f'{a}, {b}, {c}, Ne Trikampis')
 ########################################################################################################################
 # 5. Sukurkite keturis kintamuosius ir random.randint(x,x) funkcija sugeneruokite jiems reikšmes nuo 0 iki 2.
 # Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti).
-n1 = random.randint(0,2)
-n2 = random.randint(0,2)
-n3 = random.randint(0,2)
-n4 = random.randint(0,2)
+# n1 = random.randint(0,2)
+# n2 = random.randint(0,2)
+# n3 = random.randint(0,2)
+# n4 = random.randint(0,2)
+#
+# zero = 0
+# one = 0
+# two = 0
+#
+# if n1 == 0:
+#     zero += 1
+# elif n1 == 1:
+#     one += 1
+# else:
+#     two += 1
+#
+# if n2 == 0:
+#     zero += 1
+# elif n2 == 1:
+#     one += 1
+# else:
+#     two += 1
+#
+# if n3 == 0:
+#     zero += 1
+# elif n3 == 1:
+#     one += 1
+# else:
+#     two += 1
+#
+# if n4 == 0:
+#     zero += 1
+# elif n4 == 1:
+#     one += 1
+# else:
+#     two += 1
+#
+# print(f'{n1, n2, n3, n4}')
+# print(f'Nuliu: {zero}')
+# print(f'Vienetu: {one}')
+# print(f'dviejetu: {two}')
+########################################################################################################################
+# Naudokite funkcija random.randint(x,x). Sukurkite ir atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0
+# turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}.   [-4],  (0)
+n1 = random.randint(-10,10)
+n2 = random.randint(-10,10)
+n3 = random.randint(-10,10)
 
-zero = 0
-one = 0
-two = 0
+print(f'{n1}, {n2}, {n3}')
+answer=''
 
 if n1 == 0:
-    zero += 1
-elif n1 == 1:
-    one += 1
+    answer += f'({n1}),'
+elif n1 < 0  :
+    answer += f'[{n1}],'
 else:
-    two += 1
+    answer += '{' + f'{n1}' + '},'
 
 if n2 == 0:
-    zero += 1
-elif n2 == 1:
-    one += 1
+    answer += f'({n2}),'
+elif n2 < 0  :
+    answer += f'[{n2}],'
 else:
-    two += 1
+    answer += '{' + f'{n2}' + '},'
 
 if n3 == 0:
-    zero += 1
-elif n3 == 1:
-    one += 1
+    answer += f'({n3})'
+elif n3 < 0  :
+    answer += f'[{n3}]'
 else:
-    two += 1
+    answer += '{' + f'{n3}' + '}'
 
-if n4 == 0:
-    zero += 1
-elif n4 == 1:
-    one += 1
-else:
-    two += 1
+print(answer)
 
-print(f'{n1, n2, n3, n4}')
-print(f'Nuliu: {zero}')
-print(f'Vienetu: {one}')
-print(f'dviejetu: {two}')
-
-
+########################################################################################################################
