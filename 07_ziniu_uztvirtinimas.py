@@ -20,14 +20,14 @@ savikaina = float(input('3. Vieno kepalo savikaina: '))
 pardavimo_kaina = float(input('4. Vieno kepalo pardavimo kaina: '))
 # 5. Kiek kepykla turi tą dieną iškepti kepalų (užsakymai).
 uzsakymas = int(input('5. Kiek kepykla turi tą dieną iškepti kepalų (užsakymai): '))
-
+# test test
 # Skaičiavimai
 print('----------------1----------------')
 # 1. Suskaičiuoti kiek kepykla per vieną darbo dieną spės iškepti duonos kepalų.
 
 max_kiekis_diena = (darbotuju_sk * kepa_per_valanda) * 8 #8 darbo valandos
 print(f'Kepykla per vieną darbo dieną spės iškepti duonos kepalų: {max_kiekis_diena}')
-
+# sdfff
 print('----------------2----------------')
 # 2. Apskaičiuoti visų kepalų savikainą, gautas pajamas pardavus ir iš to gauto pelno dalį.
 savikaina_diena = uzsakymas * savikaina
